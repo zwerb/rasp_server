@@ -2,7 +2,7 @@
 
 ### Random Function Test
 ```
-raspistill -o /Dev/camera_dev/images image_001.jpg
+raspistill -o /home/pi/Dev/camera_dev/images/image_001.jpg
 ```
 
 
