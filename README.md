@@ -15,7 +15,9 @@ cd /home/pi/Dev/
 ```
 raspistill -rot 90 -o /home/pi/Dev/camera_dev/images/image_001.jpg
 
-./home/pi/Dev/camera_dev/camerashot.sh
+cd /home/pi/Dev/camera_dev
+./camerashot.sh
+
 ```
 
 
