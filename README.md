@@ -62,7 +62,14 @@ git remote add origin https://github.com/zwerb/rasp_server.git
 git push -u origin master
 ```
 
+### Update and Config
+```
+sudo apt update
+sudo apt full-upgrade
+Now you need to enable camera support using the raspi-config program you will have used when you first set up your Raspberry Pi.
 
+sudo raspi-config
+```
 
 
 
