@@ -12,9 +12,24 @@ cd /home/pi/Dev/
 ```
 
 
-### Random Function Test
+### Random Camera Function Test and Bash
 ```
-raspistill -o /home/pi/Dev/camera_dev/images/image_001.jpg
+raspistill -rot 90 -o /home/pi/Dev/camera_dev/images/image_001.jpg
+
+cd /home/pi/Dev/camera_dev/
+
+touch camerashot.sh
+
+#!/bin/bash
+DATE=$(date +"%Y-%m-%d_%H%M")
+raspistill -rot 90 -o /home/pi/Dev/camera_dev/images/$DATE.jpg
+
+^o
+^x
+
+chmod +x camerashot.sh
+
+./camerashot.sh
 ```
 
 
