@@ -11,11 +11,16 @@ ssh pi@ip.ip.ip.ip
 cd /home/pi/Dev/
 ```
 
-
-### Random Camera Function Test and Bash
+### Run Camera Functions Test
 ```
 raspistill -rot 90 -o /home/pi/Dev/camera_dev/images/image_001.jpg
 
+./home/pi/Dev/camera_dev/camerashot.sh
+```
+
+
+### Set up Camera Functions Test Bash
+```
 cd /home/pi/Dev/camera_dev/
 
 touch camerashot.sh
