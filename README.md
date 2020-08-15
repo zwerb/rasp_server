@@ -1,11 +1,24 @@
 #Raspberry Pi Server 1.1
 
+
+### Client SSH:
+```
+ssh pi@ip.ip.ip.ip
+```
+
+### Get to Dev:
+```
+cd /home/pi/Dev/
+```
+
+
 ### Random Function Test
 ```
 raspistill -o /home/pi/Dev/camera_dev/images/image_001.jpg
 ```
 
-### SSH on the Pi
+
+### Setup SSH on the Pi
 ```
 sudo apt install openssh-server
 
@@ -16,10 +29,6 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 
 hostname -I
-
-#Client:
-ssh pi@ip.ip.ip.ip
-
 ```
 
 ### Securing the Pi
@@ -45,7 +54,7 @@ sudo visudo /etc/sudoers.d/010_pi-nopasswd
 git clone  https://github.com/zwerb/rasp_server.git rasp_server
 ```
 
-### Start A New REpo
+### Start A New Repo
 ```
 echo "# rasp_server" >> README.md
 git init
@@ -65,8 +74,7 @@ git push -u origin master
 ### Update and Config
 ```
 sudo apt update
-sudo apt full-upgrade
-Now you need to enable camera support using the raspi-config program you will have used when you first set up your Raspberry Pi.
+sudo apt full-upgradesudo 
 
 sudo raspi-config
 ```
