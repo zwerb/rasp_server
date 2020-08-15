@@ -5,8 +5,12 @@
 raspistill -o /home/pi/Dev/camera_dev/images/image_001.jpg
 ```
 
+### Get Started
+```
+git clone  https://github.com/zwerb/rasp_server.git rasp_server
+```
 
-### Start Fresh
+### Start A New REpo
 ```
 echo "# rasp_server" >> README.md
 git init
