@@ -5,6 +5,14 @@
 raspistill -o /home/pi/Dev/camera_dev/images/image_001.jpg
 ```
 
+### SSH on the Pi
+```
+sudo apt install openssh-server
+
+sudo nano /etc/ssh/sshd_config
+    --> AllowUsers username
+```
+
 ### Securing the Pi
 ```
 sudo adduser username
@@ -21,12 +29,6 @@ sudo deluser -remove-home pi
 sudo visudo /etc/sudoers.d/010_pi-nopasswd
     --> pi ALL=(ALL) NOPASSWD: ALL --> pi ALL=(ALL) PASSWD: ALL
     :q
-    
-sudo apt install openssh-server
-
-sudo nano /etc/ssh/sshd_config
-    --> AllowUsers username
-
 ```
 
 ### Get Started
