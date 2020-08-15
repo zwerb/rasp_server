@@ -18,6 +18,8 @@ raspistill -rot 90 -o /home/pi/Dev/camera_dev/images/image_001.jpg
 cd /home/pi/Dev/camera_dev
 ./camerashot.sh
 
+display images/image_ [TAB]
+
 ```
 
 
@@ -29,7 +31,7 @@ touch camerashot.sh
 
 #!/bin/bash
 DATE=$(date +"%Y-%m-%d_%H%M")
-raspistill -rot 90 -o /home/pi/Dev/camera_dev/images/$DATE.jpg
+raspistill -rot 90 -o /home/pi/Dev/camera_dev/images/$DATE.jpg -w 800 -h 600
 
 ^o
 ^x
