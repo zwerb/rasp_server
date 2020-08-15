@@ -11,6 +11,14 @@ sudo apt install openssh-server
 
 sudo nano /etc/ssh/sshd_config
     --> AllowUsers username
+    
+sudo systemctl enable ssh
+sudo systemctl start ssh
+
+hostname -I
+
+ssh pi@ip.ip.ip.ip
+
 ```
 
 ### Securing the Pi
