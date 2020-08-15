@@ -17,6 +17,7 @@ sudo systemctl start ssh
 
 hostname -I
 
+#Client:
 ssh pi@ip.ip.ip.ip
 
 ```
