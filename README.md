@@ -31,6 +31,12 @@ sudo systemctl start ssh
 hostname -I
 ```
 
+### Setup Camera on Pi
+```
+sudo raspi-config
+    4 --> Camera --> Enable
+```
+
 ### Securing the Pi
 ```
 sudo adduser username
